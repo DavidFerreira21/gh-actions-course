@@ -1,7 +1,6 @@
-name: My First Workflow
-on:
-  dispatch
-  push
+name: 01 - Building Blocks
+on: [push]
+
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
