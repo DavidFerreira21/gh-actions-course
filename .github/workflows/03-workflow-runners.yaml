@@ -5,7 +5,7 @@ on:
       - main
 jobs:
     runner-info:
-      runs-on: macOS-latest
+      runs-on: windows-latest
       steps:
         - name: Show runner information
           run: |
