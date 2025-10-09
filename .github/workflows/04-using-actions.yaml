@@ -9,10 +9,9 @@ jobs:
         working-directory: 04-using-actions/react-app
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-
+        uses: actions/checkout@v4
       - name: Use an action from the GitHub Marketplace
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '22.x'
 
