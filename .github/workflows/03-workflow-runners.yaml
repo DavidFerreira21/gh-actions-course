@@ -1,8 +1,7 @@
 name: 03 - Workflow Runners
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch
+
 jobs:
     runner-info:
       runs-on: ubuntu-latest  # Change to ubuntu-latest or macos-latest to see different runner info 
