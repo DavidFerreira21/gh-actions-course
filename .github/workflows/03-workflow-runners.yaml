@@ -1,0 +1,15 @@
+name: 03 - Workflow Runners
+on:
+  push:
+    branches:
+      - main
+jobs:
+    runner-info:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Show runner information
+          run: |
+            echo "Runner name: ${{ runner.name }}"
+            echo "Runner OS: ${{ runner.os }}"
+            echo "Runner temp directory: ${{ runner.temp }}"
+            echo "Runner tool cache directory: ${{ runner.tool_cache }}"    
