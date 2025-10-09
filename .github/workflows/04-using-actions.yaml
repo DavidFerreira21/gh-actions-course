@@ -10,9 +10,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Use an action from the GitHub Marketplace
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '22.x'
+          node-version: '22.20.0'
       - name: listing files
         run: ls
         working-directory: 04-using-actions/react-app
@@ -24,4 +24,5 @@ jobs:
 
       - name: Run tests
         run: npm run test
+        working-directory: 04-using-actions/react-app
   
