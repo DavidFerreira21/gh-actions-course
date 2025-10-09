@@ -18,6 +18,7 @@ jobs:
           node-version: '22.x'
 
       - name: Install dependencies
+        working-directory: ./04-using-actions/react-app
         run: npm ci
         
 
