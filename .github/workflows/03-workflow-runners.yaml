@@ -5,7 +5,7 @@ on:
       - main
 jobs:
     runner-info:
-      runs-on: windows-latest
+      runs-on: ubuntu-latest  # Change to ubuntu-latest or macos-latest to see different runner info 
       steps:
         - name: Show runner information
           run: |
