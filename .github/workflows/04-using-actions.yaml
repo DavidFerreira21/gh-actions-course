@@ -8,11 +8,11 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Use an action from the GitHub Marketplace
         uses: actions/setup-node@v5
         with:
-          node-version: '22.20.0'
+          node-version: '22.x'
       - name: listing files
         run: ls
         working-directory: 04-using-actions/react-app
